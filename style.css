@@ -1,17 +1,19 @@
 header{
     background-color:#0B1C51;
-    margin-bottom: 50px;
-    text-align: center;
+    margin-bottom: 40px;
 }   
 header h1{
     color: white;
     text-align:center;
+    font-family: 'Gochi Hand';
     font-size: 48px;
+    margin: 0;
+    padding-top: 20px;
 }
 header nav{
     color: white;
     display: flex;
-    padding: none;
+    font-family: 'Montserrat',Arial, Helvetica, sans-serif;
     justify-content: center;
 }
 header nav ul {
@@ -20,6 +22,7 @@ header nav ul {
     list-style: none;
 }
 header nav ul li a {
+    font-family: 'Montserrat';
     color: #fff;
     text-decoration: none;
     margin:0 20px 0 0;
@@ -27,4 +30,24 @@ header nav ul li a {
 header nav ul li:last-child a {
     margin-right: 0;
 
+}
+
+	/* for Desktop view */
+@media all and (min-width: 600px){
+    header{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 30px;
+    }
+    header h1{
+        margin: 15px 0;
+        padding-top: 6px;
+        font-size: 42px;
+    }
+    header nav{
+        margin-top: 14px;
+    }
+    header nav ul li a:hover {
+        color: #bdbdbd;
+      }
 }
